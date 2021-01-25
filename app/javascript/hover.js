@@ -2,10 +2,10 @@ function hover() {
   const articles = document.querySelectorAll(".article");
   articles.forEach((article) => {
     article.addEventListener('mouseover', () => {
-      console.log("マウスオーバー");
+      article.setAttribute("style", "background-color:#F1940B;");
     });
     article.addEventListener('mouseout', () => {
-      console.log("マウスアウト");
+      article.removeAttribute("style");
     });
   });
 }
