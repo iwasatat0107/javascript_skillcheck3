@@ -9,5 +9,4 @@ function hover() {
     });
   });
 }
-
-window.addEventListener('load', hover);
+setInterval(hover, 1000);
