@@ -1,5 +1,10 @@
 function hover() {
-  console.log("マウスオーバーによる色彩変更機能を実装");
+  const articles = document.querySelectorAll(".article");
+  articles.forEach((article) => {
+    article.addEventListener('mouseover', () => {
+      console.log("マウスオーバー");
+    });
+  });
 }
 
 window.addEventListener('load', hover);
